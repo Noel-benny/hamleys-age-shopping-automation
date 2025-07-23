@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CrossBrowserSuite" parallel = "false">
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="HamleysAutomationScripts.HamleysTestNG"/>
+        </classes>
+    </test>
+    <test name="EdgeTest">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="HamleysAutomationScripts.HamleysTestNG"/>
+        </classes>
+    </test>
+</suite>
